@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "*/5 0 * * *"
+    - cron: "*/15 0 * * *"
 
 jobs:
   autogreen:
@@ -22,4 +22,3 @@ jobs:
           git pull --rebase
           git commit --allow-empty -m "a commit a day keeps your girlfriend away"
           git push
-          
